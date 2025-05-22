@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         eventsContainer.appendChild(eventElement);
       });
     })
+
     .catch((error) =>
       console.error("Erreur de récupération des événements :", error)
     );

@@ -1,5 +1,5 @@
 body {
-  background: #292f36;
+  background-color: #292f36;
   /*   background-color: #4ecdc4; */
   font-family: Arial, sans-serif;
   height: 100vh;
@@ -26,7 +26,7 @@ header {
 }
 
 .navi ul li {
-  margin: 0 15px;
+  margin: 15px;
 }
 
 /* Liens */
@@ -34,10 +34,10 @@ header {
   text-decoration: none;
   color: #292f36;
   font-size: 30 px;
-  font-family: target-text;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   padding: 8px 12px;
-  /*   transition: 0.3s; */
+  /*   transition: 0.3s; */ /*   transition: 0.3s;je veux savoir sert à quoi ??? */
 }
 
 .navi ul li a:hover {
@@ -46,7 +46,8 @@ header {
 }
 
 h1 {
-  background-color: #4ecdc4;
+  background-color: #292f36;
+  color: #f7fff7;
   height: 60px;
   text-align: center;
   margin-top: 10px;
@@ -60,17 +61,20 @@ h1 {
   justify-items: center;
   height: 100vh;
   gap: 20px;
-  width: 70%;
+  width: 80%;
   margin: auto; /* soucie pour centrer le bloc */
 }
 
 .event {
-  background: #4ecdc58c;
-  padding: 20px;
-  border-radius: 11px;
+  font-family: Arial, sans-serif;
+  padding: 8px;
+  background-color: #4ecdc4;
+  border: 2px solid #292f36;
+  border-radius: 10px;
   border-color: #292f36;
   box-shadow: #292f36;
   width: 300px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .event h2 {
@@ -82,8 +86,10 @@ h1 {
 }
 
 button {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
   background-color: #f5a623;
-  color: #f7fff7;
+  color: #292f36;
   border: none;
   padding: 12px;
   cursor: pointer;
@@ -91,7 +97,8 @@ button {
 }
 
 button:hover {
-  background-color: #292f36;
+  background-color: #ffe66d;
+  color: #292f36;
 }
 
 .modal {
@@ -124,6 +131,7 @@ button:hover {
 
 #toggle-theme {
   display: flex;
+  color: #f7fff7;
   flex-direction: row;
   justify-content: flex-end;
   justify-items: flex-end;

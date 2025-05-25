@@ -122,7 +122,7 @@ function getCookie(name) {
   }
   return null;
 }
-// ------------------- darck mode 2 ---------------------
+// ------------------- darck mode 2 de demo ---------------------
 const body = document.querySelector("body");
 const button = document.getElementById("toggle-theme");
 

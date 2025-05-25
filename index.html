@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- head -------------------------------------------------------->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evénements association</title>
 
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
-
+    <!-- nav -------------------------------------------------------->
     <!-- Barre de navigation ------------------------------------->
-    <div>
-    <nav class="navi">
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Événements</a></li>
-        <li><a href="#">Favoris</a></li>
-        <li><a href="#">Connexion</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <!-- 4. Thème clair / sombre ------------------------------------->
-    <button id="toggle-theme"> 🌙 thème</button>
-
-
-      </div>
+    <nav>
+      <nav class="navi">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Événements</a></li>
+          <li><a href="#">Favoris</a></li>
+          <li><a href="#">Connexion</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- 4. Thème clair / sombre ------------------------------------->
+        <button id="toggle-theme">🌙 thème</button>
+      </nav>
     </nav>
 
-    <h1>Liste des événements de l'association</h1>
+    <!-- main -------------------------------------------------------->
+    <main>
+      <h1>Liste des événements de l'association</h1>
 
-    
-    <!-- section liste des événements -->
-    <section class="sect1">
-      <h3>Les événements</h3>
-      <div id="events-container">
+      <!-- section liste des événements -->
+      <section class="sect1">
+        <h3>Les événements</h3>
+        <div id="events-container">
+          <!-- Modale pour afficher les détails d'un événement -->
+          <div id="event-modal" class="modal">
+            <div class="modal-content">
+              <span id="close-modal" class="close">&times;</span>
 
-        <!-- Modale pour afficher les détails d'un événement -->
-        <div id="event-modal" class="modal">
-          <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
-            <p id="modal-date"></p>
-            <p id="modal-location"></p>
-            <a id="modal-link" href="#" target="_blank"
-              >Lien vers la source externe</a
-            >
+              <!-- &times; est une entité HTML qui représente le symbole "×" (multiplication ou fermeture). -->
+              <!--comment faire pour l'accessibility par clavier et sans souris dans ce cas ?? -->
+
+              <h2 id="modal-title">title</h2>
+              <p id="modal-description">description</p>
+              <p id="modal-date">date</p>
+              <p id="modal-location">location</p>
+              <a id="modal-link" href="#" target="_blank"
+                >Lien vers la source externe</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- section mon planing -->
-    <section class="sect2">
-      <h3>Mon planning</h3>
-    <fram>Mon planning 
-<!--       <hr> -->
+      </section>
+      <!-- section mon planing -->
+      <section class="sect2">
+        <h3>Mon planning</h3>
+        <fram
+          >Mon planning
+          <!--       <hr> -->
+        </fram>
+      </section>
 
-    </fram>
-    </section>
-
-    <script src="script.js"></script>
+      <script src="script.js"></script>
+    </main>
+    <!-- footer -------------------------------------------------------->
     <footer>
-      <div id ="foot">
+      <div id="foot">
+        <p>&copy; 2025 Portail d'Événements. Tous droits réservés.</p>
 
-    <p>&copy; 2025 Portail d'Événements. Tous droits réservés.</p>
-
-    <p>Contact : 
-      <a href="mailto:contact@evenements.com">contact@evenements.com</a>
-    </p>
-    <p>Suivez-nous sur : 
-        <a href="#">Facebook</a> | 
-        <a href="#">Twitter</a> | 
-        <a href="#">Instagram</a>
-    </p>
-    </div>
-</footer>
-    
+        <p>
+          Contact :
+          <a href="mailto:contact@evenements.com">contact@evenements.com</a>
+        </p>
+        <p>
+          Suivez-nous sur : <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+          <a href="#">Instagram</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
